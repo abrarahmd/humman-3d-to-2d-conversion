@@ -17,7 +17,7 @@ Before starting, make sure you have the following:
 
 ## 🧰 Python Environment Setup
 
-> Python **3.9** is required for compatibility with `chumpy`
+> Python **3.9** is required!
 
 ### Step-by-step instructions:
 
@@ -28,14 +28,7 @@ Before starting, make sure you have the following:
 .\python\python.exe -m venv env
 .\env\Scripts\activate.bat
 
-# 3. Install archive extraction tool
-pip install py7zr
-
-# 4. Extract the dataset files
-py7zr x Smpl_params.7z
-py7zr x Point_cameras.7z
-
-# 5. Install dependencies
+# 3. Install dependencies
 pip install torch==1.12.1
 pip install opencv-python==4.10.0.84
 pip install smplx==0.1.28 --no-deps
@@ -44,7 +37,15 @@ pip install trimesh==4.4.3
 pip install tqdm==4.66.4
 pip install open3d
 pip install numpy==1.23.5
+
+# 4. Install archive extraction tool
+pip install py7zr
+
+# 5. Extract the dataset files
+py7zr x Smpl_params.7z
+py7zr x Point_cameras.7z
 ```
+
 ## Project Structure
 HuMMan-Project/
 ```
@@ -75,3 +76,4 @@ After setting up your environment and extracting the `.7z` files, run the follow
 
 # Run the script
 python 2D_extraction.py
+```
