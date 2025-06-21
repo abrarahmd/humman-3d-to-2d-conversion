@@ -47,6 +47,7 @@ pip install numpy==1.23.5
 ```
 ## Project Structure
 HuMMan-Project/
+```
 ├── Datasets/
 │   ├── p000438_a000040/
 │   │   ├── smpl_params.npz
@@ -63,5 +64,14 @@ HuMMan-Project/
 ├── env/                      # Virtual environment
 ├── 2D_extraction.py          # Main projection script
 └── README.md
+```
+## ▶️ Run the 2D_extraction.py Script
 
-## Run 2D_extraction.py Script
+After setting up your environment and extracting the `.7z` files, run the following:
+
+```bash
+# Activate your virtual environment
+.\env\Scripts\activate.bat
+
+# Run the script
+python 2D_extraction.py
