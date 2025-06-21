@@ -6,7 +6,7 @@ This repository contains all the instructions and scripts to extract 2D joint co
 
 ## 📦 Required Files
 
-Before starting, make sure you have the following:
+Before starting, make sure you have the following from [Github](https://huggingface.co/datasets/caizhongang/HuMMan):
 
 - `Smpl_params.7z` — contains SMPL pose data (`smpl_params.npz` files per sequence)
 - `Point_cameras.7z` — contains camera intrinsics (`cameras.json` files per sequence)
