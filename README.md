@@ -1,17 +1,18 @@
 # HuMMan 2D Keypoint Extraction
 
-This repository contains all the instructions and scripts to extract 2D joint coordinates from the HuMMan dataset using SMPL model parameters and camera intrinsics.
+This repository provides instructions and a script to extract 2D joint coordinates from the HuMMan dataset using SMPL model parameters and camera intrinsics.
 
 ---
 
 ## 📦 Required Files
 
-Before starting, make sure you have the following from [Github](https://huggingface.co/datasets/caizhongang/HuMMan/tree/main/humman_release_v1.0_point):
+Before starting, download the following from the [HuMMan Hugging Face page](https://huggingface.co/datasets/caizhongang/HuMMan/tree/main/humman_release_v1.0_point):
 
-- `Smpl_params.7z` — contains SMPL pose data (`smpl_params.npz` files per sequence)
-- `Point_cameras.7z` — contains camera intrinsics (`cameras.json` files per sequence)
+- `smpl_params.7z` — Contains SMPL pose data (`smpl_params.npz` per sequence)
+- `point_cameras.7z` — Contains camera intrinsics (`cameras.json` per sequence)
 - `SMPL_NEUTRAL.pkl` — SMPL body model file  
-  👉 [Download from the official SMPL site](https://smpl.is.tue.mpg.de/index.html)
+  👉 [Download from the official SMPL site](https://smpl.is.tue.mpg.de/index.html)  
+  Use **version 1.1.0** for Python 2.7 (female/male/neutral, 300 shape PCs)
 
 ---
 
