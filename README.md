@@ -1,4 +1,4 @@
-# HuMMan 2D Keypoint Extraction
+# HuMMan 3D to 2D Keypoint Extraction
 
 This repository provides instructions and a script to extract 2D joint coordinates from the HuMMan dataset using SMPL model parameters and camera intrinsics.
 
