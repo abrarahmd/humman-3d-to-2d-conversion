@@ -14,22 +14,34 @@ Before starting, download the following from the [HuMMan Hugging Face page](http
   👉 [Download from the official SMPL site](https://smpl.is.tue.mpg.de/index.html)  
   Use **version 1.1.0** for Python 2.7 (female/male/neutral, 300 shape PCs)
 
+> **After download:**  
+Create the following folder structure:
+```
+body_models/
+└── smpl/
+└── SMPL_NEUTRAL.pkl # Rename from the downloaded .pkl
+```
 ---
 
 ## 🧰 Python Environment Setup
 
-> Python **3.9** is required!
+> ⚠️ Requires Python **3.9** (not 3.11+ due to compatibility issues)
 
-### Step-by-step instructions:
+### 🔧 Step-by-step:
 
 ```bash
-# 1. Install Python 3.9 (locally, not globally) into ./python/
+# Step 1 — Install Python 3.9 locally (do not add to PATH)
+# Install it into: ./python/ inside your project folder
 
-# 2. Create and activate a virtual environment
+# Step 2 — Create and activate a virtual environment
 .\python\python.exe -m venv env
 .\env\Scripts\activate.bat
 
-# 3. Install dependencies
+# Step 3 — Select the interpreter in VS Code
+# Press Ctrl + Shift + P → "Python: Select Interpreter"
+# Choose: D:\WorkoutAnalysisProject\python\python.exe
+
+# Step 4 — Install dependencies
 pip install torch==1.12.1
 pip install opencv-python==4.10.0.84
 pip install smplx==0.1.28 --no-deps
@@ -38,13 +50,6 @@ pip install trimesh==4.4.3
 pip install tqdm==4.66.4
 pip install open3d
 pip install numpy==1.23.5
-
-# 4. Install archive extraction tool
-pip install py7zr
-
-# 5. Extract the dataset files
-py7zr x Smpl_params.7z
-py7zr x Point_cameras.7z
 ```
 
 ## Project Structure
@@ -62,11 +67,12 @@ HuMMan-Project/
 ├── body_models/
 │   └── smpl/
 │       └── SMPL_NEUTRAL.pkl
-├── python/                   # Local Python 3.9 install
-├── env/                      # Virtual environment
-├── 2D_extraction.py          # Main projection script
+├── python/                  
+├── env/                
+├── 2D_extraction.py      
 └── README.md
 ```
+
 ## ▶️ Run the 2D_extraction.py Script
 
 After setting up your environment and extracting the `.7z` files, run the following:
