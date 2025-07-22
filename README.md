@@ -22,7 +22,6 @@ body_models/
 └── SMPL_NEUTRAL.pkl # Rename from the downloaded .pkl
 ```
 
-Contact If you have any questions, suggestions, or feedback, please feel free to contact me at [abrargroad2000@gmail.com].
 ---
 
 ## 🧰 Python Environment Setup
@@ -86,3 +85,4 @@ After setting up your environment and extracting the `.7z` files, run the follow
 # Run the script
 python 2D_extraction.py
 ```
+Contact If you have any questions, suggestions, or feedback, please feel free to contact me at [abrargroad2000@gmail.com].
